@@ -23,3 +23,6 @@ The included APKs are:
  * LineageOS packages (binaries sourced from [here](https://download.lineageos.org/extras))
    * OpenWeatherMapWeatherProvider: "Open Weather Map" weather provider for the LineageOS' weather service
 
+## Adaptations and modifications of this repository (fork)
+* GmsCore taken from [e.OS](https://gitlab.e.foundation/e/os/android_prebuilts_prebuiltapks) and signed with platform key
+* Added eSpeakTTS from e.OS
