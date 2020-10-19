@@ -24,5 +24,6 @@ The included APKs are:
    * OpenWeatherMapWeatherProvider: "Open Weather Map" weather provider for the LineageOS' weather service
 
 ## Adaptations and modifications of this repository (fork)
-* GmsCore taken from [e.OS](https://gitlab.e.foundation/e/os/android_prebuilts_prebuiltapks) and signed with platform key
+* GmsCore taken built from source (patched GCM to be enabled by default) and signed with platform key
 * Added eSpeakTTS from e.OS
+* FDroid and FDroidPrivilegedExtension built from source and signed with own key following v2-scheme
