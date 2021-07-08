@@ -1,0 +1,27 @@
+From 978c15f06c9ed92084679781232826abfd3c3c1e Mon Sep 17 00:00:00 2001
+From: MSe1969 <mse1969@posteo.de>
+Date: Thu, 8 Jul 2021 18:21:37 +0200
+Subject: [PATCH] Enable GCM by default (CheckIn is already on by default)
+
+Rework of patch after commit:
+           "Refactor settings access to use a SettingsProvider"
+---
+ .../src/main/kotlin/org/microg/gms/settings/SettingsProvider.kt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/play-services-core/src/main/kotlin/org/microg/gms/settings/SettingsProvider.kt b/play-services-core/src/main/kotlin/org/microg/gms/settings/SettingsProvider.kt
+index f635539c..df8ab989 100644
+--- a/play-services-core/src/main/kotlin/org/microg/gms/settings/SettingsProvider.kt
++++ b/play-services-core/src/main/kotlin/org/microg/gms/settings/SettingsProvider.kt
+@@ -127,7 +127,7 @@ class SettingsProvider : ContentProvider() {
+ 
+     private fun queryGcm(p: Array<out String>): Cursor = MatrixCursor(p).addRow(p) { key ->
+         when (key) {
+-            Gcm.ENABLE_GCM -> getSettingsBoolean(key, false)
++            Gcm.ENABLE_GCM -> getSettingsBoolean(key, true)
+             Gcm.FULL_LOG -> getSettingsBoolean(key, true)
+             Gcm.CONFIRM_NEW_APPS -> getSettingsBoolean(key, false)
+ 
+-- 
+2.20.1
+
