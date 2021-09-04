@@ -9,10 +9,10 @@ Rework of patch after commit:
  .../src/main/kotlin/org/microg/gms/settings/SettingsProvider.kt | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
-diff --git a/play-services-core/src/main/kotlin/org/microg/gms/settings/SettingsProvider.kt b/play-services-core/src/main/kotlin/org/microg/gms/settings/SettingsProvider.kt
+diff --git a/play-services-base-core/src/main/kotlin/org/microg/gms/settings/SettingsProvider.kt b/play-services-base-core/src/main/kotlin/org/microg/gms/settings/SettingsProvider.kt
 index f635539c..df8ab989 100644
---- a/play-services-core/src/main/kotlin/org/microg/gms/settings/SettingsProvider.kt
-+++ b/play-services-core/src/main/kotlin/org/microg/gms/settings/SettingsProvider.kt
+--- a/play-services-base-core/src/main/kotlin/org/microg/gms/settings/SettingsProvider.kt
++++ b/play-services-base-core/src/main/kotlin/org/microg/gms/settings/SettingsProvider.kt
 @@ -127,7 +127,7 @@ class SettingsProvider : ContentProvider() {
  
      private fun queryGcm(p: Array<out String>): Cursor = MatrixCursor(p).addRow(p) { key ->
