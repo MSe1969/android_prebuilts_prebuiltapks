@@ -27,3 +27,4 @@ The included APKs are:
 * GmsCore taken built from source (patched GCM to be enabled by default) and signed with platform key
 * Added eSpeakTTS from e.OS
 * FDroid and FDroidPrivilegedExtension built from source and signed with own key following v2-scheme
+* Added Stubs for Android Auto and Google app, credit to Dylanger Daly <dylanger@diagnostix.io>
