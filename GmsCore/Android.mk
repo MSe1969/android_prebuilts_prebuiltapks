@@ -29,6 +29,7 @@ LOCAL_REQUIRED_MODULES := \
     sysconfig-com.google.android.gms.xml
 LOCAL_USES_LIBRARIES := com.android.location.provider
 LOCAL_OPTIONAL_USES_LIBRARIES := \
+    org.apache.http.legacy \
     androidx.window.extensions \
     androidx.window.sidecar
 LOCAL_PRODUCT_MODULE := true
