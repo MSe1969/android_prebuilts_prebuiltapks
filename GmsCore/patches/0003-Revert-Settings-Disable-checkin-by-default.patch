@@ -1,0 +1,28 @@
+From a306c7c08ad7720259ddf5a4052e1438572d13d1 Mon Sep 17 00:00:00 2001
+From: MSe <mse1969@posteo.de>
+Date: Sun, 12 Feb 2023 14:11:38 +0100
+Subject: [PATCH] Revert "Settings: Disable checkin by default"
+
+This reverts commit 02849180a15ca9fc003d095a266e2706b0b37a25.
+
+Keep compatibility - we don't want to "switch off" on existing builds.
+---
+ .../src/main/kotlin/org/microg/gms/settings/SettingsProvider.kt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/play-services-base/core/src/main/kotlin/org/microg/gms/settings/SettingsProvider.kt b/play-services-base/core/src/main/kotlin/org/microg/gms/settings/SettingsProvider.kt
+index b0080d51..a3cb76cb 100644
+--- a/play-services-base/core/src/main/kotlin/org/microg/gms/settings/SettingsProvider.kt
++++ b/play-services-base/core/src/main/kotlin/org/microg/gms/settings/SettingsProvider.kt
+@@ -93,7 +93,7 @@ class SettingsProvider : ContentProvider() {
+ 
+     private fun queryCheckIn(p: Array<out String>): Cursor = MatrixCursor(p).addRow(p) { key ->
+         when (key) {
+-            CheckIn.ENABLED -> getSettingsBoolean(key, false)
++            CheckIn.ENABLED -> getSettingsBoolean(key, true)
+             CheckIn.ANDROID_ID -> checkInPrefs.getLong(key, 0)
+             CheckIn.DIGEST -> checkInPrefs.getString(key, CheckIn.INITIAL_DIGEST)
+                 ?: CheckIn.INITIAL_DIGEST
+-- 
+2.30.2
+
