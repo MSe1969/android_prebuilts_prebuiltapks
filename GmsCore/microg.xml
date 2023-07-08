@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <boolean name="checkin_enable_service" value="true" />
+    <boolean name="gcm_enable_mcs_service" value="true" />
+</map>
