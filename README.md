@@ -24,3 +24,6 @@ The included APKs are:
 * Added eSpeakTTS from e.OS
 * FDroid and FDroidPrivilegedExtension built from source and signed with own key following v2-scheme
 * Added Stubs for Android Auto and Google app, credit to Dylanger Daly <dylanger@diagnostix.io>
+
+## Branches
+Use branch 'master' up to Android 11, use branch '12L' from Android 12 onwards
