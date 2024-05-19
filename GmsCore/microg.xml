@@ -2,4 +2,6 @@
 <map>
     <boolean name="checkin_enable_service" value="true" />
     <boolean name="gcm_enable_mcs_service" value="true" />
+    <boolean name="auth_manager_trust_google" value="true" />
+    <boolean name="auth_manager_visible" value="true" />
 </map>
