@@ -15,5 +15,6 @@
         <permission name="android.permission.UPDATE_DEVICE_STATS" />
         <permission name="android.permission.WATCH_APPOPS" />
         <permission name="android.permission.POST_NOTIFICATIONS" />
+        <permission name="android.permission.READ_CONTACTS"/>
     </privapp-permissions>
 </permissions>
