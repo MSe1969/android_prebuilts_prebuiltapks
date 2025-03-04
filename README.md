@@ -1,5 +1,7 @@
 # Prebuilt APKs
 
+THIS REPO HAS BEEN MIGRATED TO CODEBERG !!!
+
 This is a collection of FOSS APKs, coupled with the respective Android.mk for an
 easy integration in the Android build system.
 These are just the official unmodified prebuilt binaries, signed by the
